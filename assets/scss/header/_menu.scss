@@ -15,6 +15,9 @@
     &.menu__is-open &__list{
         transform: scaleY(1);
     }
+    &.menu__is-open &__list li a{
+       opacity: 1;
+    }
     &__icon {
         width: 30px;
         height: 20px;
@@ -54,7 +57,7 @@
         }
     }
     &__list{
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -69,6 +72,7 @@
         transform-origin: 0 0;
         transition: all .3s ease;
         @media(min-width:768px){
+            background-color: transparent;
             position: static;
             flex-direction: row;
             transform: scaleY(1);
@@ -89,5 +93,10 @@
     &__list li a{
        font-weight: 500;
        font-size: 20px;
+       opacity: 0;
+       transition: all .1s;
+       @media(min-width:768px){
+        opacity: 1;
+       }
     }
 }
