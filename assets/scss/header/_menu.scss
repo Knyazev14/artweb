@@ -84,7 +84,6 @@
         transform: scaleY(0);
         transform-origin: 0 0;
         transition: all .3s ease;
-
         @media(min-width:768px) {
             background-color: transparent;
             position: static;
@@ -93,92 +92,96 @@
             padding-top: 0;
         }
     }
-
-    &__sub-list li+li {
-        margin-top: 20px;
-    }
-
-    &__sub-list li a {
-        font-weight: 300;
-    }
-
-    &__sub-list {
-        display: none;
-
-        @media(min-width:768px) {
-            position: absolute;
-            background-color: white;
-            padding: 25px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.162);
-            border-radius: 4px 4px 20px 4px;
-            top: 25px;
-            left: 0;
-
+    &__list-item{
+        position: relative;
+    } 
+    &__list-item:hover::after{
+        @media(min-width:768px){
+            opacity: 1;
         }
+    } 
+    &__list-item:hover &__sub-list{
+       transform: scaleY(1);
+    } 
+    &__list-item::after{
+        transition: all .3s;
+        content: '';
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        border-radius: 4px;
+        background: linear-gradient(117deg, #3CA0D2 11.27%, #48DCA6 67.35%);
+        opacity: 0;
+    } 
+    &__list-dropdown::before{
+        content: '';
+        position: absolute;
+        right: -18px;
+        top: 17px;
+        background-image: url('../img/bg/arrow.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 14px;
+        height: 7px;
     }
-
-    &__list>li:hover &__sub-list {
-        display: block;
-
-        @media(min-width:768px) {}
-    }
-
-    &__list>li>a {
-        padding: 10px 0;
-
-        @media(min-width:768px) {
-            padding: 0;
-        }
-    }
-
-    &__list>li+li {
-        margin-top: 20px;
-
-        @media(min-width:768px) {
+    &__list-item + &__list-item{
+        margin-top: 25px;
+        @media(min-width:768px){
             margin-left: 20px;
             margin-top: 0;
         }
-
-        @media(min-width:1290px) {
+        @media(min-width:1290px){
             margin-left: 30px;
-            margin-top: 0;
         }
     }
-
-    &__list>li>a {
-        font-weight: 500;
-        font-size: 20px;
-        opacity: 0;
-        transition: all .1s;
-
-        @media(min-width:768px) {
-            opacity: 1;
+    &__list-item &__sub-list{
+        @media(min-width:768px){
+            position: absolute;
+            left: 0;
+            top: 35px;
+            background-color: white;
+            z-index: 4;
+            transform: scaleY(0);
+            padding: 30px;
+            width: 320px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.217);
+            border-radius: 5px 5px 20px 5px;
+            transition: all .3s ease;
+            transform-origin: 0 0;
         }
+
     }
-    &__list-dropdown > a{
+
+    &__sub-item{
         position: relative;
-        padding-right: 30px;
-        margin-right: 15px;
     }
-    &__list-dropdown > a::before{
+  &__sub-item:hover::after{
+    opacity: 1;
+  }
+    &__sub-item::after{
+        transition: all .3s;
         content: '';
+        width: 100%;
         position: absolute;
-        top: 50%;
-        right: -20px;
-        transform: translate(0, -50%);
-        width: 15px;
-        height: 10px;
-        background-image: url('../img/bg/arrow.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
+        bottom: -5px;
+        left: 0;
+        height: 2px;
+        border-radius: 4px;
+        background: linear-gradient(117deg, #3CA0D2 11.27%, #48DCA6 67.35%);
+        opacity: 0;
+    } 
+    &__list-link{
+        padding: 10px 0;
+        font-size: 20px;
+        font-weight: 500;
     }
-    &__list li a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        @media(min-width:768px) {
-            justify-content: flex-start;
-        }
+    &__sub-link{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    &__sub-item + &__sub-item{
+        margin-top: 20px;
     }
 }

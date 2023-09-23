@@ -11,9 +11,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-height: calc(100vh - 122px);
+        min-height: calc(100vh - 133px);
         @media(min-width:768px) {
-            min-height: calc(100vh - 133px);
+           
         }
 
     }
