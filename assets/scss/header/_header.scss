@@ -1,0 +1,44 @@
+.header{
+    background-color: white;
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    &__logo{
+        position: relative;
+        z-index: 36;
+    }
+    &__idea{
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 36;
+    }
+    &__idea-img{
+        max-width: 40px;
+        @media(min-width:1290px){
+            max-width: 67px;
+         }
+    }
+    &__idea-txt{
+        margin-left: 7px;
+      font-size: 15px;
+      max-width: 90px;
+      font-style: italic;
+      @media(min-width:768px){
+       max-width: 100%;
+    }
+    @media(min-width:1290px){
+       font-size: 20px;
+     }
+    }
+    &__btn{
+        display: none;
+        @media(min-width:1290px){
+            display: flex;
+        }
+    }
+}
