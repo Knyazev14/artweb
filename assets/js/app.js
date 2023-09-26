@@ -1,5 +1,6 @@
 import { openSelector } from './modules/clickClass.js'
 import { scrollTrigger} from './modules/scrollTrigger.js'
+import { observe } from './modules/observe.js'
 
 
 
@@ -21,5 +22,6 @@ document.addEventListener('DOMContentLoaded', function(){
         elementTrigger: '.header__body',
         addClass: 'is-scrolled'
     });
-
+    
+    
 })

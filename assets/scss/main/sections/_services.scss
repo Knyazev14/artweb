@@ -19,6 +19,7 @@ margin-bottom: 100px;
            position: sticky;
            top: 110px;
            max-height: 600px;
+           flex: 0 0 45%;
         }
         
     }
@@ -60,9 +61,8 @@ margin-bottom: 100px;
 
     &__right {
         @media(min-width:1290px){
-            flex: 0 0 585px;
-            display: flex;
-            flex-direction: column;
+            flex: 1 1 585px;
+         
          }
     }
 
