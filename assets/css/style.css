@@ -793,3 +793,214 @@ body.menu__is-open {
   max-width: 500px;
   line-height: normal;
 }
+
+.steck__title {
+  margin-bottom: 40px;
+}
+@media (min-width: 1290px) {
+  .steck__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+.steck__text {
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+@media (min-width: 1290px) {
+  .steck__text {
+    font-size: 33px;
+    line-height: 40px;
+    text-align: center;
+    max-width: 1060px;
+    margin: 0 auto 40px;
+  }
+}
+.steck__card {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media (min-width: 768px) {
+  .steck__card {
+    padding: 20px;
+  }
+}
+@media (min-width: 1290px) {
+  .steck__card {
+    padding: 40px;
+    border-radius: 20px;
+  }
+}
+.steck__card.steck__card-open .steck__card-bottom {
+  grid-template-rows: 1fr;
+}
+.steck__card-bottom-wrap {
+  min-height: 0px;
+}
+@media (min-width: 768px) {
+  .steck__card-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.steck__card-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .steck__card-title {
+    font-family: Nunito;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1290px) {
+  .steck__card-title {
+    font-size: 35px;
+  }
+}
+.steck__card-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 300px;
+}
+@media (min-width: 1290px) {
+  .steck__card-images {
+    max-width: 100%;
+  }
+}
+.steck__card-span {
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 10px;
+}
+@media (min-width: 1290px) {
+  .steck__card-span {
+    font-size: 18px;
+  }
+}
+.steck__card-link {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 35px;
+          flex: 0 0 35px;
+  max-width: 35px;
+}
+@media (min-width: 1290px) {
+  .steck__card-link {
+    max-width: 60px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60px;
+            flex: 0 0 60px;
+  }
+}
+.steck__card-link + .steck__card-link {
+  margin-left: 7px;
+}
+@media (min-width: 1290px) {
+  .steck__card-link + .steck__card-link {
+    margin-left: 15px;
+  }
+}
+.steck__card-img {
+  width: 100%;
+  height: 100%;
+}
+.steck__card-bottom {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  -webkit-transition: grid-template-rows 400ms;
+  transition: grid-template-rows 400ms;
+  transition: grid-template-rows 400ms, -ms-grid-rows 400ms;
+}
+.steck__card-item {
+  margin: 20px 0;
+}
+@media (min-width: 1290px) {
+  .steck__card-item {
+    margin: 60px 0 0 0;
+  }
+}
+.steck__card-item-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+.steck__card-item-img {
+  max-width: 30px;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1290px) {
+  .steck__card-item-img {
+    max-width: 60px;
+  }
+}
+.steck__card-item-title {
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 10px;
+}
+@media (min-width: 1290px) {
+  .steck__card-item-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+.steck__card-item-bottom {
+  font-size: 19px;
+  font-weight: 300;
+  max-width: 500px;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  .steck__card-item-bottom {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1290px) {
+  .steck__card-item-bottom {
+    max-width: 1050px;
+    font-size: 22px;
+    line-height: 40px;
+  }
+}
+
+@media (any-hover: hover) {
+  .steck__card:hover {
+    -webkit-box-shadow: 0px 0px 20px 0px #48DCA6;
+            box-shadow: 0px 0px 20px 0px #48DCA6;
+  }
+}

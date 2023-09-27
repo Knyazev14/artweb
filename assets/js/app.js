@@ -23,5 +23,12 @@ document.addEventListener('DOMContentLoaded', function(){
         addClass: 'is-scrolled'
     });
     
-    
+    //Стек технололгий
+    const openSteckItem = new openSelector({
+        selectorClick: '.steck__card',
+        selectorAddClass: '.steck__card',
+        selectorSecondAddClass: false,
+        newClass: 'steck__card-open',
+        noSelectorClickRemove: true
+    });
 })
