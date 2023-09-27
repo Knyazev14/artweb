@@ -383,6 +383,7 @@ body.menu__is-open {
 .menu.menu__is-open .menu__list {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
+  opacity: 1;
 }
 .menu.menu__is-open .menu__list li a {
   opacity: 1;
@@ -454,6 +455,7 @@ body.menu__is-open {
           transform-origin: 0 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  opacity: 0;
 }
 @media (min-width: 768px) {
   .menu__list {
@@ -466,6 +468,7 @@ body.menu__is-open {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
     padding-top: 0;
+    opacity: 1;
   }
 }
 .menu__list-item {
@@ -1206,10 +1209,23 @@ body.menu__is-open {
 .form__textarea {
   font-family: Nunito;
   font-size: 16px;
-  min-height: 100px;
+  min-height: 80px;
   margin-top: 10px;
   border-bottom: 1px solid #3FA0D2;
+  margin-bottom: 20px;
 }
+.form__policy {
+  font-size: 16px;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.form__policy-link {
+  color: #3FA0D2;
+}
+.form__btn {
+  width: 100%;
+}
+
 .email {
   display: -webkit-box;
   display: -ms-flexbox;

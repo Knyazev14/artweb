@@ -383,6 +383,7 @@ body.menu__is-open {
 .menu.menu__is-open .menu__list {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
+  opacity: 1;
 }
 .menu.menu__is-open .menu__list li a {
   opacity: 1;
@@ -454,6 +455,7 @@ body.menu__is-open {
           transform-origin: 0 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  opacity: 0;
 }
 @media (min-width: 768px) {
   .menu__list {
@@ -466,6 +468,7 @@ body.menu__is-open {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
     padding-top: 0;
+    opacity: 1;
   }
 }
 .menu__list-item {
