@@ -2,6 +2,8 @@ body{
     font-family: $Jost;
     font-size: 18px;
     overflow-x: hidden;
+    color: $clrBasic;
+    -webkit-tap-highlight-color: transparent;
     &.menu__is-open{
         overflow: hidden;
     }
@@ -43,11 +45,13 @@ body{
     background: linear-gradient(117deg, #3CA0D2 11.27%, #48DCA6 67.35%);
     padding: 14px 32px;
     transition: all .3s ease;
+    box-shadow: 0 5px 2px teal;
+    transform: translate(0, -5px);
 }
 @media(any-hover: hover){
     .btn:hover{
-        box-shadow: 0 5px 2px teal;
-        transform: translate(0, -5px);
+        box-shadow: 0 2px 2px teal;
+        transform: translate(0, -2px);
         
     }
 }
@@ -64,3 +68,10 @@ body{
         font-size: 70px;
     }
 }
+.color--primary{
+    color: $clrPrimary;
+}
+.color--secondary{
+    color: $clrSecondary;
+}
+

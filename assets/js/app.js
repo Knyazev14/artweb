@@ -1,6 +1,5 @@
 import { openSelector } from './modules/clickClass.js'
 import { scrollTrigger} from './modules/scrollTrigger.js'
-import { observe } from './modules/observe.js'
 
 
 
@@ -31,4 +30,5 @@ document.addEventListener('DOMContentLoaded', function(){
         newClass: 'steck__card-open',
         noSelectorClickRemove: true
     });
+    
 })

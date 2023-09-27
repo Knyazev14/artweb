@@ -1,0 +1,45 @@
+.form {
+    border-radius: 20px;
+    background-color: #FFF;
+    padding: 30px 20px;
+    &__item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $clrSecondary;
+        margin-bottom: 20px;
+    }
+    &__item-textarea{
+        display: flex;
+        flex-direction: column;
+    }
+    &__label {
+font-family: $Nunito;
+font-size: 16px;
+font-weight: 700;
+    }
+
+    &__input {
+        padding: 10px 5px;
+font-family: $Nunito;
+font-size: 16px;
+flex: 1 1 100%;
+
+    }
+
+    &__textarea {
+        font-family: $Nunito;
+        font-size: 16px;
+        min-height: 100px;
+        margin-top: 10px;
+        border-bottom: 1px solid $clrSecondary;
+    }
+
+    &__policy {
+    }
+
+    &__policy-link {
+    }
+
+    &__btn {
+    }
+}

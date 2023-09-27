@@ -1,5 +1,0 @@
-function observe(){
-    
-}
-
-export {observe}

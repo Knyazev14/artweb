@@ -1,0 +1,109 @@
+.email {
+    display: flex;
+    align-items: center;
+    &__wrap {
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.168);
+        background: linear-gradient(148deg, #444343 -58.8%, rgb(42, 41, 41) 100%);
+        backdrop-filter: blur(74px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 7px;
+    }
+
+    &__img {
+    }
+
+    &__content {
+    }
+
+    &__link {
+        color: #FFF;
+        font-family: $Nunito;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        @media(min-width:768px){
+            font-size: 20px;
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__job {
+        margin-right: 5px;
+        width: 16px;
+        height: 16px;
+    }
+
+    &__text {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+.telegram {
+    display: flex;
+    align-items: center;
+    &__wrap {
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.168);
+        background: linear-gradient(148deg, #444343 -58.8%, rgb(42, 41, 41) 100%);
+        backdrop-filter: blur(74px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 7px;
+    }
+
+    &__img {
+        margin-right: 3px;
+    }
+
+    &__content {
+    }
+
+    &__link {
+        color: #FFF;
+        font-family: $Nunito;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        @media(min-width:768px){
+            font-size: 20px;
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 300;
+        position: relative;
+        padding-left: 15px;
+    }
+    &__text::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #30BD3E;
+
+    }
+}
