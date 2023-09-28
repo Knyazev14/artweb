@@ -6,6 +6,10 @@
     height: 100%;
     position: relative;
     background-position: center center;
+    margin-bottom: 100px;
+    @media(min-width:768px){
+        margin-bottom: 200px;
+    }
     &:before {
         content: '';
         position: absolute;
@@ -57,6 +61,9 @@
             font-size: 22px;
             line-height: 40px;
         }
+        @media(min-width:1290px){
+            margin-left: 30px;
+        }
     }
 
     &__title {
@@ -66,9 +73,11 @@
         font-size: 30px;
         line-height: 40px;
         margin-bottom: 40px;
-
+        @media(min-width:768px){
+            max-width: 500px;
+        }
         @media(min-width:1290px) {
-
+            max-width: 600px;
             font-size: 60px;
             font-weight: 700;
             line-height: 85px;

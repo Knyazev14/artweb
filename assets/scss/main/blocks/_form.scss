@@ -2,27 +2,41 @@
     border-radius: 20px;
     background-color: #FFF;
     padding: 30px 20px;
+
+    @media(min-width:460px) {
+        padding: 35px;
+    }
+
+    @media(min-width:768px) {
+        max-width: 470px;
+    }
+    @media(min-width:1290px) {
+        padding: 50px 40px;
+    }
+
     &__item {
         display: flex;
         align-items: center;
         border-bottom: 1px solid $clrSecondary;
         margin-bottom: 20px;
     }
-    &__item-textarea{
+
+    &__item-textarea {
         display: flex;
         flex-direction: column;
     }
+
     &__label {
-font-family: $Nunito;
-font-size: 16px;
-font-weight: 700;
+        font-family: $Nunito;
+        font-size: 16px;
+        font-weight: 700;
     }
 
     &__input {
         padding: 10px 5px;
-font-family: $Nunito;
-font-size: 16px;
-flex: 1 1 100%;
+        font-family: $Nunito;
+        font-size: 16px;
+        flex: 1 1 100%;
 
     }
 
@@ -36,9 +50,9 @@ flex: 1 1 100%;
     }
 
     &__policy {
-font-size: 16px;
-line-height: normal; 
-margin-bottom: 20px;
+        font-size: 16px;
+        line-height: normal;
+        margin-bottom: 25px;
     }
 
     &__policy-link {
@@ -46,6 +60,6 @@ margin-bottom: 20px;
     }
 
     &__btn {
-     width: 100%;
+        width: 100%;
     }
 }
