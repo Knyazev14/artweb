@@ -9,16 +9,15 @@
         background-color: #363636;
         padding: 60px 15px;
         flex-direction: column;
-        @media(min-width:1290px){
+
+        @media(min-width:1290px) {
             flex-direction: row;
             padding: 70px 60px;
         }
     }
 
-    &__item {
-      
-    }
-  
+    &__item {}
+
 
     &__logo {
         padding-bottom: 14px;
@@ -32,9 +31,9 @@
 
     &__main-list-link {
         color: #FFF;
-font-size: 23px;
-font-weight: 700;
-margin-bottom: 25px;
+        font-size: 23px;
+        font-weight: 700;
+        margin-bottom: 25px;
     }
 
     &__item-title {
@@ -42,13 +41,12 @@ margin-bottom: 25px;
         border-bottom: 1px solid #FFF;
         margin-bottom: 30px;
 
-    
-            color: #FFF;
-            font-family: $Nunito;
-            font-size: 32px;
-            font-weight: 700;
-            line-height: 40px
-        
+
+        color: #FFF;
+        font-family: $Nunito;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px
     }
 
     &__social {}
@@ -70,7 +68,9 @@ margin-bottom: 25px;
         line-height: 20px;
     }
 
-    &__bottom {}
+    &__bottom {
+       
+    }
 }
 
 

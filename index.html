@@ -424,12 +424,12 @@
                             <form class="feedback__form form ajax-form">
                                 <div class="form__item">
                                     <label class="form__label" for="name">ФИО:</label>
-                                    <input class="form__input" type="text" name="name" id="name"
+                                    <input class="form__input _req name" type="text" name="name" id="name"
                                         placeholder="Князев Артём Александрович">
                                 </div>
                                 <div class="form__item">
                                     <label class="form__label" for="email">Email:</label>
-                                    <input class="form__input" type="text" name="email" id="email"
+                                    <input class="form__input _req emails" type="text" name="email" id="email"
                                         placeholder="knyazev_artemm@mail.ru">
                                 </div>
                                 <div class="form__item-textarea">
@@ -441,6 +441,8 @@
                                         class="form__policy-link" rel="nofollow" href="#">политикой
                                         конфиденциальности</a></p>
                                 <button class="form__btn btn">Отправить</button>
+                                <div class="form__send">Сообщение отправлено!</div>
+                                <div class="form__no-send">Заполните обязательные поля!</div>
                             </form>
                         </div>
                     </div>
@@ -539,8 +541,8 @@
             </footer>
         </main>
     </div>
-
+<script src="assets/js/app.js" type="module"></script>
 </body>
-<script src="assets/js/app.js" type="module" defer></script>
+
 
 </html>

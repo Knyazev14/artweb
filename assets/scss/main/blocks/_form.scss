@@ -2,7 +2,15 @@
     border-radius: 20px;
     background-color: #FFF;
     padding: 30px 20px;
-
+    &._error &__no-send{
+        display: inline-flex;
+    }
+    &._error &__item{
+        border-bottom: 2px solid rgba(255, 0, 0, 0.29);
+    }
+    &._sended &__send{
+        display: inline-flex;
+    }
     @media(min-width:460px) {
         padding: 35px;
     }
@@ -20,7 +28,7 @@
         border-bottom: 1px solid $clrSecondary;
         margin-bottom: 20px;
     }
-
+  
     &__item-textarea {
         display: flex;
         flex-direction: column;
@@ -61,5 +69,26 @@
 
     &__btn {
         width: 100%;
+        margin-bottom: 10px;
+    }
+    &__send{
+        background-color: $clrPrimary;
+        display: none;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    &__no-send{
+        background-color: rgba(255, 0, 0, 0.29);
+        display: none;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        color: white;
     }
 }

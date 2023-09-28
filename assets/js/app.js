@@ -1,13 +1,12 @@
 import { openSelector } from './modules/clickClass.js'
 import { scrollTrigger} from './modules/scrollTrigger.js'
-
-
+import { ajaxForm } from './modules/form.js'
 
 
 document.addEventListener('DOMContentLoaded', function(){
 
      //Меню сайта
-    const openMenu = new openSelector({
+    let openMenu = new openSelector({
         selectorClick: '.menu__icon',
         selectorAddClass: '.menu',
         selectorSecondAddClass: 'body',
@@ -15,20 +14,31 @@ document.addEventListener('DOMContentLoaded', function(){
         noSelectorClickRemove: true
     });
 
+
     //Фиксированная шапка
-    const myFixedMenu = new scrollTrigger({
+    let myFixedMenu = new scrollTrigger({
         element: '.header__container',
         elementTrigger: '.header__body',
         addClass: 'is-scrolled'
     });
     
     //Стек технололгий
-    const openSteckItem = new openSelector({
+    let openSteckItem = new openSelector({
         selectorClick: '.steck__card',
         selectorAddClass: '.steck__card',
         selectorSecondAddClass: false,
         newClass: 'steck__card-open',
-        noSelectorClickRemove: true
+        noSelectorClickRemove: false
     });
+
+   
+
+    //Отправка форм
+    const allForms = document.querySelectorAll('.ajax-form')
+    allForms.forEach(form=>{
+        form.addEventListener('submit',  ajaxForm)
+
+    })
+
     
 })

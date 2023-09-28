@@ -349,6 +349,7 @@ body.menu__is-open {
 }
 .header__btn {
   display: none;
+  cursor: pointer;
 }
 @media (min-width: 1290px) {
   .header__btn {
@@ -1191,6 +1192,19 @@ body.menu__is-open {
   background-color: #FFF;
   padding: 30px 20px;
 }
+.form._error .form__no-send {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.form._error .form__item {
+  border-bottom: 2px solid rgba(255, 0, 0, 0.29);
+}
+.form._sended .form__send {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
 @media (min-width: 460px) {
   .form {
     padding: 35px;
@@ -1256,6 +1270,35 @@ body.menu__is-open {
 }
 .form__btn {
   width: 100%;
+  margin-bottom: 10px;
+}
+.form__send {
+  background-color: #48DCA6;
+  display: none;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+.form__no-send {
+  background-color: rgba(255, 0, 0, 0.29);
+  display: none;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
 }
 
 .email {
