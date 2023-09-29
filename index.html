@@ -60,7 +60,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="header__btn btn">КОНСУЛЬТАЦИЯ</button>
+                    <button class="header__btn btn btn-modal">КОНСУЛЬТАЦИЯ</button>
                 </div>
             </div>
         </header>
@@ -371,6 +371,19 @@
                     </div>
                 </div>
             </section>
+            <section class="global">
+                <div class="container">
+                    <div class="global__body">
+                        <img class="global__img" src="assets/img/icons/clients.svg" loading="lazy" alt="Мы готовы работать с вами, где бы вы ни находились">
+                        <div class="global__content">
+                            <h3 class="global__title">Мы готовы работать с Вами, где бы Вы ни находились</h3>
+                            <p class="global__text">Наши услуги ориентированы на предоставление высококачественных решений в области веб-разработки доступны для клиентов в любой точке планеты. Мы гордимся нашей способностью успешно сотрудничать с заказчиками из разных уголков мира.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
 
             <section class="feedback">
                 <div class="feedback__container container">
@@ -448,6 +461,9 @@
                     </div>
                 </div>
             </section>
+
+        
+
             <footer class="footer">
                 <div class="container">
                     <div class="footer__body">
@@ -539,6 +555,32 @@
                     </div>
                 </div>
             </footer>
+            <div class="modal">
+                <div class="modal__close"><img src="assets/img/icons/cross.svg" loading="lazy" alt="Звкрыть"></div>
+                <form class="modal__form form ajax-form">
+                    <div class="form__item">
+                        <label class="form__label" for="name">ФИО:</label>
+                        <input class="form__input _req name" type="text" name="name" id="name"
+                            placeholder="Князев Артём Александрович">
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="email">Email:</label>
+                        <input class="form__input _req emails" type="text" name="email" id="email"
+                            placeholder="knyazev_artemm@mail.ru">
+                    </div>
+                    <div class="form__item-textarea">
+                        <label class="form__label" for="message">Вопрос:</label>
+                        <textarea class="form__textarea" name="message" id="message"
+                            placeholder="Добрый день! Чтобы вы смогли нам посоветовать при создании интернет-имагазина?"></textarea>
+                    </div>
+                    <p class="form__policy">Нажимая на кнопку, вы соглашаетесь с <a
+                            class="form__policy-link" rel="nofollow" href="#">политикой
+                            конфиденциальности</a></p>
+                    <button class="form__btn btn">Отправить</button>
+                    <div class="form__send">Сообщение отправлено!</div>
+                    <div class="form__no-send">Заполните обязательные поля!</div>
+                </form>
+            </div>
         </main>
     </div>
 <script src="assets/js/app.js" type="module"></script>

@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
         newClass: 'menu__is-open',
         noSelectorClickRemove: true
     });
-
-
+    
     //Фиксированная шапка
     let myFixedMenu = new scrollTrigger({
         element: '.header__container',
@@ -40,5 +39,21 @@ document.addEventListener('DOMContentLoaded', function(){
 
     })
 
+
+    //Закрытие модального окна
+    const modal = document.querySelector('.modal')
+
+    document.addEventListener('click', function(e){
+        if(e.target.closest('.btn-modal')){
+            modal.classList.add('modal-is-open')
+        }
+        if(!e.target.closest('.modal') && !e.target.closest('.btn-modal')){
+            modal.classList.remove('modal-is-open')
+        }
+        if(e.target.closest('.modal__close')){
+            modal.classList.remove('modal-is-open')
+        }
+        
+    })
     
 })

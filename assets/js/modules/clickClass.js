@@ -30,11 +30,11 @@ function openSelector(options) {
         }
 
         let clickedSelector = e.target.closest(selectorAddClass)
-        if(!clickedSelector){
-            clickedSelector = this.selectorAddClass
-        }
-        if (clickedSelector) {
-            clickedSelector.classList.toggle(newClass)
+        
+        if (clickedSelector || this.selectorSecondAddClass) {
+            if(clickedSelector){
+                clickedSelector.classList.toggle(newClass)
+            }
             if(this.selectorSecondAddClass && clickedSelector.classList.contains(newClass)){
                 this.selectorSecondAddClass.classList.add(newClass)
             }
