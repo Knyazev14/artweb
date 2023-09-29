@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="icon" href="favicon.ico" sizes="any">
     <title>ARTweb</title>
+    <script type='application/ld+json'> 
+        {
+          "@context": "http://www.schema.org",
+          "@type": "Organization",
+          "name": "ArtWeb - Искусство создания сайтов и веб-приложений",
+          "url": "https://kniazey.ru/",
+          "logo": "https://kniazey.ru/assets/img/icons/logo.svg",
+          "image": "https://kniazey.ru/assets/img/icons/logo.svg",
+          "description": "Команда специалистов занимающаяся разработкой сайтов и веб-приложений.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Могилев",
+            "addressCountry": "Беларусь"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+375333759889"
+          }
+        }
+         </script>
+    <script type='application/ld+json'> 
+        {
+            "@context": "http://www.schema.org",
+            "@type": "WebSite",
+            "name": "ArtWeb - Искусство создания сайтов и веб-приложений",
+            "alternateName": "ArtWeb - Искусство создания сайтов и веб-приложений",
+            "url": "https://kniazey.ru/"
+          }
+
+         </script>
+
+
 </head>
 
 <body>
@@ -21,42 +53,52 @@
                         <img class="header__idea-img" src="assets/img/icons/idea.png" alt="От идеи к реальности">
                         <span class="header__idea-txt">“От идеи к реальности”</span>
                     </div>
-                    <nav class="header__menu menu">
+                    <nav class="header__menu menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
                         <button class="menu__icon">
                             <span></span>
                         </button>
-                        <ul class="menu__list">
-                            <li class="menu__list-item menu__list-dropdown">
-                                <a class="menu__list-link" href="/">Услуги</a>
-                                <ul class="menu__sub-list">
-                                    <li class="menu__sub-item">
-                                        <a class="menu__sub-link" href="/">Создание сайтов и веб-приложений</a>
+                        <ul class="menu__list" itemprop="about" itemscope="" itemtype="http://schema.org/ItemList">
+                            <li class="menu__list-item menu__list-dropdown" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                                <a class="menu__list-link" href="/" itemprop="url">Услуги</a>
+                                <meta itemprop="name" content="Услуги" />
+                                <ul class="menu__sub-list" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                                    <li class="menu__sub-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                                        <a class="menu__sub-link" href="/" itemprop="url">Создание сайтов и веб-приложений</a>
+                                        <meta itemprop="name" content="Создание сайтов и веб-приложений" />
                                     </li>
-                                    <li class="menu__sub-item">
-                                        <a class="menu__sub-link" href="/">Доработка сайтов и исправление ошибок</a>
+                                    <li class="menu__sub-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                                        <a class="menu__sub-link" href="/" itemprop="url">Доработка сайтов и исправление ошибок</a>
+                                        <meta itemprop="name" content="Доработка сайтов и исправление ошибок" />
                                     </li>
-                                    <li class="menu__sub-item">
-                                        <a class="menu__sub-link" href="/">Аудит сайта</a>
+                                    <li class="menu__sub-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                                        <a class="menu__sub-link" href="/" itemprop="url">Аудит сайта</a>
+                                        <meta itemprop="name" content="Аудит сайта" />
                                     </li>
-                                    <li class="menu__sub-item">
-                                        <a class="menu__sub-link" href="/">Консультация по веб-технологиям</a>
+                                    <li class="menu__sub-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                                        <a class="menu__sub-link" href="/" itemprop="url">Консультация по веб-технологиям</a>
+                                        <meta itemprop="name" content="Консультация по веб-технологиям" />
                                     </li>
-                                    <li class="menu__sub-item">
-                                        <a class="menu__sub-link" href="/">Обучение созданию сайтов и веб-приложений</a>
+                                    <li class="menu__sub-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                                        <a class="menu__sub-link" href="/" itemprop="url">Обучение созданию сайтов и веб-приложений</a>
+                                        <meta itemprop="name" content="Обучение созданию сайтов и веб-приложений" />
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="/">Кейсы</a>
+                            <li class="menu__list-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                                <a class="menu__list-link" href="/" itemprop="url">Кейсы</a>
+                                <meta itemprop="name" content="Кейсы" />
                             </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="/">Отзывы</a>
+                            <li class="menu__list-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                                <a class="menu__list-link" href="/" itemprop="url">Отзывы</a>
+                                <meta itemprop="name" content="Отзывы" />
                             </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="/">Блог</a>
+                            <li class="menu__list-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                                <a class="menu__list-link" href="/" itemprop="url">Блог</a>
+                                <meta itemprop="name" content="Блог" />
                             </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="/">О нас</a>
+                            <li class="menu__list-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                                <a class="menu__list-link" href="/" itemprop="url">О нас</a>
+                                <meta itemprop="name" content="О нас" />
                             </li>
                         </ul>
                     </nav>
@@ -101,52 +143,52 @@
                         </div>
                         <div class="services__right">
 
-                            <article class="services__card services-card">
+                            <article class="services__card services-card" itemscope itemtype="http://schema.org/Product">
                                 <a class="services-card__link" href="/">
                                     <img class="services-card__img" loading="lazy" src="assets/img/icons/service-1.svg"
-                                        alt="Создание сайтов и веб-приложений">
-                                    <h3 class="services-card__title">Создание сайтов и веб-приложений</h3>
-                                    <p class="services-card__text">Мы придадим жизнь вашей уникальной концепции, начиная
+                                        alt="Создание сайтов и веб-приложений" itemprop="image">
+                                    <h3 class="services-card__title" itemprop="name">Создание сайтов и веб-приложений</h3>
+                                    <p class="services-card__text" itemprop="description">Мы придадим жизнь вашей уникальной концепции, начиная
                                         с чистого холста, поддерживая вас на каждом этапе разработки — будь то простой
                                         визитный сайт или сложное веб-приложение.</p>
                                 </a>
                             </article>
 
-                            <article class="services__card services-card">
+                            <article class="services__card services-card" itemscope itemtype="http://schema.org/Product">
                                 <a class="services-card__link" href="/">
                                     <img class="services-card__img" loading="lazy" src="assets/img/icons/service-2.svg"
-                                        alt="Создание сайтов и веб-приложений">
-                                    <h3 class="services-card__title">Доработка сайтов и исправление ошибок</h3>
-                                    <p class="services-card__text">Мир веб-разработки меняется, и ваш сайт должен расти
+                                        alt="Создание сайтов и веб-приложений" itemprop="image">
+                                    <h3 class="services-card__title" itemprop="name">Доработка сайтов и исправление ошибок</h3>
+                                    <p class="services-card__text" itemprop="description">Мир веб-разработки меняется, и ваш сайт должен расти
                                         вместе с ним. Мы поможем обновить и улучшить ваш проект, чтобы он соответствовал
                                         современным требованиям и ожиданиям пользователей.</p>
                                 </a>
                             </article>
-                            <article class="services__card services-card">
+                            <article class="services__card services-card" itemscope itemtype="http://schema.org/Product">
                                 <a class="services-card__link" href="/">
                                     <img class="services-card__img" loading="lazy" src="assets/img/icons/service-3.svg"
-                                        alt="Создание сайтов и веб-приложений">
-                                    <h3 class="services-card__title">Аудит сайта</h3>
-                                    <p class="services-card__text">Проанализировав все аспекты вашего сайта, мы выявим
+                                        alt="Создание сайтов и веб-приложений" itemprop="image">
+                                    <h3 class="services-card__title" itemprop="name">Аудит сайта</h3>
+                                    <p class="services-card__text" itemprop="description">Проанализировав все аспекты вашего сайта, мы выявим
                                         его сильные стороны и области для улучшения, что поможет вам сделать осознанные
                                         шаги вперёд.</p>
                                 </a>
                             </article>
-                            <article class="services__card services-card">
-                                <a class="services-card__link" href="/">
+                            <article class="services__card services-card" itemscope itemtype="http://schema.org/Product">
+                                <a class="services-card__link" href="/" >
                                     <img class="services-card__img" loading="lazy" src="assets/img/icons/service-4.svg"
-                                        alt="Создание сайтов и веб-приложений">
-                                    <h3 class="services-card__title">Консультация по веб-технологиям</h3>
-                                    <p class="services-card__text">Получите ясное представление о веб-технологиях через
+                                        alt="Создание сайтов и веб-приложений" itemprop="image">
+                                    <h3 class="services-card__title" itemprop="name">Консультация по веб-технологиям</h3>
+                                    <p class="services-card__text" itemprop="description">Получите ясное представление о веб-технологиях через
                                         нашу специализированную консультацию.</p>
                                 </a>
                             </article>
-                            <article class="services__card services-card">
+                            <article class="services__card services-card" itemscope itemtype="http://schema.org/Product">
                                 <a class="services-card__link" href="/">
                                     <img class="services-card__img" loading="lazy" src="assets/img/icons/service-5.svg"
-                                        alt="Создание сайтов и веб-приложений">
-                                    <h3 class="services-card__title">Обучение созданию сайтов и веб-приложений</h3>
-                                    <p class="services-card__text">Освойте навыки создания сайтов и веб-приложений
+                                        alt="Создание сайтов и веб-приложений" itemprop="image">
+                                    <h3 class="services-card__title" itemprop="name">Обучение созданию сайтов и веб-приложений</h3>
+                                    <p class="services-card__text" itemprop="description">Освойте навыки создания сайтов и веб-приложений
                                         благодаря нашему обучению.</p>
                                 </a>
                             </article>
