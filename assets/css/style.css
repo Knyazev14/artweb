@@ -218,6 +218,10 @@ body.menu__is-open {
   height: 100%;
 }
 
+.hidden {
+  display: none;
+}
+
 .btn {
   color: white;
   font-size: 17px;
