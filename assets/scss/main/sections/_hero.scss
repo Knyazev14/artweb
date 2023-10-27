@@ -11,6 +11,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        object-position: 50% 50%;
         min-height: calc(100vh - 133px);
         @media(min-width:768px) {
            

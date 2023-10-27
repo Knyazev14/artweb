@@ -620,6 +620,8 @@ body.menu__is-open {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
   min-height: calc(100vh - 133px);
 }
 .hero__video {
